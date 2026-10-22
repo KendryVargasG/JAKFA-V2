@@ -25,12 +25,13 @@ function mostrarEstado() {
 
     if (estaAbierto(horaActual)) {
         estado.textContent = "Abierto ahora. Cerramos a las 7:00 p. m.";
-        estado.classList.add("abierto");
+        estado.classList.replace("text-bg-secondary", "text-bg-success");
     } else {
-        estado.textContent = "Cerrado. Abrimos a las 7:00 a. m.";
-        estado.classList.add("cerrado");
+        estado.textContent = "Cerrado. Abrimos a las 8:00 a. m.";
+        estado.classList.replace("text-bg-secondary", "text-bg-danger");
     }
 }
+
 
 function mostrarCatalogo() {
     const menu = document.querySelector("#menu");
@@ -38,11 +39,17 @@ function mostrarCatalogo() {
 
     for (const producto of productos) {
         html += `
-            <li class="producto">
-                <h3>${producto.nombre}</h3>
-                <p>${producto.descripcion}</p>
-                <span class="precio">${formatearPrecio(producto.precio)}</span>
-            </li>`;
+        <li>
+            <article class="card h-100 shadow-sm border-0 border-start border-5">
+                <div class="card-body">
+                    <h3 class="card-title h5">${producto.nombre}</h3>
+                    <p class="card-text small">${producto.descripcion}</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                    <span class="precio fw-bold">${formatearPrecio(producto.precio)}</span>
+                </div>
+            </article>
+        </li>`;
     }
 
     menu.innerHTML = html;
