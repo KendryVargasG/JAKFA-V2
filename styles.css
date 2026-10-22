@@ -79,9 +79,9 @@ body {
 
 /* ===== Barra de navegación ===== */
 .navbar-jakfa {
-    background-color: var(--barraincio);
+    background-color: var(--barraincio); 
 }
-
+/*
 /* ===== Pie de página (index y contactenos) ===== */
 footer {
     padding: 25px 20px;
