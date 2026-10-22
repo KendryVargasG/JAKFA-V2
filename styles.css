@@ -1,5 +1,6 @@
 :root {
     --azulmain: rgb(4, 66, 124);
+    --barraincio: #1D191F;
     --lowblue: rgb(51, 159, 231); 
     --negro: rgba(8, 5, 14, 0.952);
     --blanco: rgb(241, 245, 252);
@@ -138,32 +139,9 @@ body {
 }
 
  
-/* ===== Barra de navegación (index y contactenos) ===== */
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px 25px;
-    padding: 14px 20px;
-    background-color: var(--azulmain);
-    font-family: var(--fuente-parrafos);
-    font-size: 0; /* oculta los separadores "|" del HTML */
-}
- 
-nav a {
-    color: var(--blanco);
-    font-size: 0.95rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
- 
-nav a:hover {
-    color: var(--lowblue);
+/* ===== Barra de navegación ===== */
+.navbar-jakfa {
+    background-color: var(--barraincio);
 }
  
 /* ===== Pie de página (index y contactenos) ===== */
