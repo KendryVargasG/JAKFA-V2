@@ -145,7 +145,7 @@ body {
 .cardVentaja:hover p,
 .cardVentaja:hover .iconoVentaja {
     color: var(--blanco) !important;
-
+}
 /* ===== Barra de navegación ===== */
 .navbar-jakfa {
     background-color: var(--barraincio); 
