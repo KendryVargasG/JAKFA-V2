@@ -1,4 +1,4 @@
 # JAKFA-V2
 Generation Colombia. Trabajo colaborativo Equipo N°1 - Laboratorio: El sitio del blog — Caso Agencia y Cliente / Integrantes: Andrés Felipe Ordoñez - Felipe Ortiz Gamboa -Jessen Quintero - Alexis Rodriguez - Kendry Vargas                                   
 Link de GitHub Pages: https://kendryvargasg.github.io/JAKFA-V2/
-Link del Tablero de Equipo: https://trello.com/b/OrXq5AbN/jakfa-tecnology
+                                                                                                                                                                       Link del Tablero de Equipo: https://trello.com/b/OrXq5AbN/jakfa-tecnology
