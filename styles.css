@@ -130,6 +130,22 @@ body {
     transition: color 0.3s ease;
 }
 
+.cardVentaja {
+    background-color: #ffffff;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardVentaja:hover {
+    background-color: var(--barraincio) !important;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(29, 25, 31, 0.25) !important;
+}
+
+.cardVentaja:hover h4,
+.cardVentaja:hover p,
+.cardVentaja:hover .iconoVentaja {
+    color: var(--blanco) !important;
+
 /* ===== Barra de navegación ===== */
 .navbar-jakfa {
     background-color: var(--barraincio); 
