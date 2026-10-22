@@ -6,13 +6,6 @@
     --blanco: rgb(241, 245, 252);     /* Tono claro/blanco para fondos secundarios y textos sobre oscuro */
     --verde: rgb(3, 82, 85);          /* Color secundario/alternativo de acento */
     --morado: rgb(73, 4, 105);        /* Tono morado corporativo para subtítulos e iconos */
-    --azulmain: rgb(4, 66, 124);
-    --barraincio: #1D191F;
-    --lowblue: rgb(51, 159, 231); 
-    --negro: rgba(8, 5, 14, 0.952);
-    --blanco: rgb(241, 245, 252);
-    --verde: rgb(3, 82, 85); 
-    --morado: rgb(73, 4, 105);
     --fuente-titulos: 'Copperplate', fantasy;
     --fuente-parrafos: 'Verdana', sans-serif;
 }
@@ -37,9 +30,6 @@ body {
 }
 
 /* ===== sección quienes somos ===== */
-/* ===== Inicio ===== */
-
-/* seccion quienes somos*/
 .quienesSomos {
     font-family: var(--fuente-parrafos);
 }
@@ -85,12 +75,13 @@ body {
 .iconoVentaja {
     color: var(--morado);
     transition: color 0.3s ease;
- 
+}
+
 /* ===== Barra de navegación ===== */
 .navbar-jakfa {
-    background-color: var(--barraincio);
+    background-color: var(--barraincio); 
 }
- 
+/*
 /* ===== Pie de página (index y contactenos) ===== */
 footer {
     padding: 25px 20px;
@@ -101,7 +92,7 @@ footer {
     line-height: 1.6;
     text-align: center;
 }
- 
+
 footer address {
     font-style: normal;
     margin-bottom: 6px;
