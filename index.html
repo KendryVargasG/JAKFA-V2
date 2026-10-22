@@ -1,52 +1,58 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="https://as2.ftcdn.net/v2/jpg/21/48/98/01/1000_F_2148980123_aWvKl9y2dNg3GNRp71JVINZ60YCarmnk.jpg"
-      type="image/x-icon"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://as2.ftcdn.net/v2/jpg/21/48/98/01/1000_F_2148980123_aWvKl9y2dNg3GNRp71JVINZ60YCarmnk.jpg"
+        type="image/x-icon">
     <title>JAKFA Tecnology</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-  </head>
-  <body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <!-- ===== MENÚ DE NAVEGACIÓN =====-->
-    <nav class="menu">
-      <a href="#inicio">Inicio</a>
-      <a href="#quienessomos">Quiénes Somos</a>
-      <a href="#contacto">Contacto</a>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-jakfa sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio">
+                <img src="imgs/JAKFA Technology Circuit Logo.png" alt="Logo JAKFA" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
+                aria-controls="menuNavegacion" aria-expanded="false" aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="menuNavegacion">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio"><i class="bi bi-house-door me-1"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quienessomos"><i class="bi bi-people me-1"></i>Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto"><i class="bi bi-envelope me-1"></i>Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <div class="contenedorPrincipal">
-      <section class="inicio" id="inicio">
-        <div class="contenedorInicio">
-          <div class="headerInicio">
-            <p id="estado" class="estado">Consultando horario...</p>
-            <h1>Tecnología al máximo, rendimiento sin límites.</h1>
-            <p class="intro">
-              Nuestro objetivo es acercarte a la tecnología de una manera
-              sencilla, práctica e interesante. ¡Explora, aprende y lleva tu
-              experiencia tecnológica al siguiente nivel con
-              <strong>CompuMax</strong>!
-            </p>
-          </div>
-          <section id="catalogo" class="catalogo">
-            <h2>Explora nuestros artículos destacados</h2>
-            <ul id="menu" class="articulos"></ul>
-          </section>
-        </div>
-      </section>
+        <section class="inicio py-5" id="inicio">
+            <div class="container-lg">
+                <div class="headerInicio text-center">
+                    <p id="estado" class="badge rounded-pill text-bg-secondary fs-6 mb-3">Consultando horario...</p>
+                    <h1 class="fs-1 mt-2 mb-4">Tecnología al máximo, rendimiento sin límites.</h1>
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-lg-10">
+                            <p class="intro bg-white p-4 mb-0 rounded shadow-sm border-0 border-start border-5 text-start lh-base">
+                                Nuestro objetivo es acercarte a la tecnología de una manera sencilla, práctica e interesante. ¡Explora,
+                                aprende y lleva tu experiencia tecnológica al siguiente nivel con <strong>CompuMax</strong>!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <section id="catalogo" class="catalogo">
+                    <h2 class="fs-3 text-center mb-4">Explora nuestros artículos destacados</h2>
+                    <ul id="menu" class="row row-cols-1 row-cols-md-2 g-4 list-unstyled"></ul>
+                </section>
+            </div>
+        </section>
 
       <section class="quienesSomos py-5" id="quienessomos">
         <div class="container">
@@ -75,93 +81,6 @@
                 </p>
               </div>
             </div>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon"
-        href="https://as2.ftcdn.net/v2/jpg/21/48/98/01/1000_F_2148980123_aWvKl9y2dNg3GNRp71JVINZ60YCarmnk.jpg"
-        type="image/x-icon">
-    <title>JAKFA Tecnology</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-jakfa sticky-top">
-
-        <div class="container-fluid">
-
-            <a class="navbar-brand" href="#inicio">
-                <img src="imgs/JAKFA Technology Circuit Logo.png" alt="Logo JAKFA" height="40">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
-                aria-controls="menuNavegacion" aria-expanded="false" aria-label="Mostrar menú">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="menuNavegacion">
-
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#inicio"><i
-                                class="bi bi-house-door me-1"></i>Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#quienessomos"><i
-                                class="bi bi-people me-1"></i>Quiénes Somos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto"><i
-                                class="bi bi-envelope me-1"></i>Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="contenedorPrincipal">
-
-        <section class="inicio py-5" id="inicio">
-            <div class="container-lg">
-                <div class="headerInicio text-center">
-                    <p id="estado" class="badge rounded-pill text-bg-secondary fs-6 mb-3">Consultando horario...</p>
-                    <h1 class="fs-1 mt-2 mb-4">Tecnología al máximo, rendimiento sin límites.</h1>
-                    <div class="row justify-content-center mb-4">
-                        <div class="col-lg-10">
-                            <p class="intro bg-white p-4 mb-0 rounded shadow-sm border-0 border-start border-5 text-start lh-base">
-                                Nuestro objetivo es acercarte a la tecnología de una manera sencilla, práctica e interesante. ¡Explora,
-                                aprende y lleva tu experiencia tecnológica al siguiente nivel con <strong>CompuMax</strong>!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <section id="catalogo" class="catalogo">
-                    <h2 class="fs-3 text-center mb-4">Explora nuestros artículos destacados</h2>
-                    <ul id="menu" class="row row-cols-1 row-cols-md-2 g-4 list-unstyled"></ul>
-                </section>
-            </div>
-        </section>
-
-        <section class="quienesSomos" id="quienessomos">
-            <div class="contenedorSomos">
-
-                <div class="headerSomos">
-                    <h2>CompuMax</h2>
-                    <p class="infSomos">Somos Expertos en el ensamblaje de computadores de alto rendimiento hechos a tu
-                        medida</p>
-                </div>
-
-                <div class="imginfSomos">
-                    <div class="introSomos">
-                        <h3>¿Quienes Somos?</h3>
-                        <p>
-                            En <strong>CompuMax</strong> nos apasiona la tecnologia y el rendimiento sin limites.
-                            Nos especializamos en el diseno, seleccion de componentes y ensamble de computadores
-                            armados,
-                            ofreciendo soluciones personalizadas para todo tipo de publico.
-                        </p>
-                    </div>
-
-                    <div class="imagenSomos">
-                        <img src="imgs/img1.webp" alt="imagen corporativa">
-                    </div>
-                </div>
 
             <div class="col-lg-6 text-center">
               <div class="imagenSomos">
@@ -203,14 +122,6 @@
                     Recibe tu PC ensamblada, configurada y lista para encender
                     sin complicaciones.
                   </p>
-        </section>
-
-        <section class="contacto" id="contacto">
-
-            <div class="container">
-
-                <div class="headerContacto text-center mb-4">
-                    <h2>Contáctanos</h2>
                 </div>
               </div>
             </div>
@@ -243,86 +154,6 @@
                     Cada equipo pasa por pruebas de rendimiento y estrés técnico
                     antes de la entrega.
                   </p>
-                <div class="row g-4">
-
-                    <div class="col-md-5">
-                        <div class="tarjetaContacto h-100">
-
-                            <h3>Información de contacto</h3>
-
-                            <p>
-                                En este formulario podrás enviarnos todo tipo de petición,
-                                queja, reclamo o sugerencia diligenciando todos los campos
-                                del formato.
-                            </p>
-
-                            <p><strong>Correo:</strong> contacto@jakfatechnology.com</p>
-                            <p><strong>Teléfono:</strong> +57 300 123 4567</p>
-                            <p><strong>Dirección:</strong> Carrera 7 # 50-22 Bogotá, Colombia</p>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="tarjetaContacto">
-
-                             <h3>Envíanos un mensaje</h3>
-
-                            <form id="formularioContacto">
-
-                                <div class="mb-3">
-                                    <label for="nombre" class="form-label">Nombre</label>
-                                    <input
-                                        type="text"
-                                        id="nombre"
-                                        name="nombre"
-                                        class="form-control"
-                                        required
-                                    >
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="correo" class="form-label">Correo electrónico</label>
-                                    <input
-                                        type="email"
-                                        id="correo"
-                                        name="correo"
-                                        class="form-control"
-                                        required
-                                    >
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="asunto" class="form-label">Asunto</label>
-                                    <input
-                                        type="text"
-                                        id="asunto"
-                                        name="asunto"
-                                        class="form-control"
-                                        required
-                                    >
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="mensaje" class="form-label">Mensaje</label>
-                                    <textarea
-                                        id="mensaje"
-                                        name="mensaje"
-                                        rows="6"
-                                        class="form-control"
-                                        required
-                                    ></textarea>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary">
-                                    Enviar mensaje
-                                </button>
-
-                            </form>
-
-                        </div>
-                    </div>
-
                 </div>
               </div>
             </div>
@@ -330,71 +161,78 @@
         </div>
       </section>
 
-      <section class="contacto" id="contacto">
-        <div class="contenedorContacto">
-          <div class="headerContacto">
-            <h2>Contáctanos</h2>
-          </div>
-
-          <div class="tarjetaContacto">
-            <h3>Información de contacto</h3>
-            <p>
-              En este formulario podrás enviarnos todo tipo de petición, queja,
-              reclamo o sugerencia diligenciando todos los campos del formato.
-            </p>
-            <p><strong>Correo:</strong> contacto@jakfatechnology.com</p>
-            <p><strong>Teléfono:</strong> +57 300 123 4567</p>
-            <p>
-              <strong>Dirección:</strong> Carrera 7 # 50-22 Bogotá, Colombia
-            </p>
-          </div>
-
-          <div class="tarjetaContacto">
-            <h3>Envíanos un mensaje</h3>
-
-            <form id="formularioContacto">
-              <div>
-                <label for="nombre">Nombre:</label><br />
-                <input type="text" id="nombre" name="nombre" required />
-              </div>
-
-              <br />
-
-              <div>
-                <label for="correo">Correo electrónico:</label><br />
-                <input type="email" id="correo" name="correo" required />
-              </div>
-
-              <br />
-
-              <div>
-                <label for="asunto">Asunto:</label><br />
-                <input type="text" id="asunto" name="asunto" />
-              </div>
-
-              <br />
-
-              <div>
-                <label for="mensaje">Mensaje:</label><br />
-                <textarea
-                  id="mensaje"
-                  name="mensaje"
-                  rows="6"
-                  cols="40"
-                  required
-                ></textarea>
-              </div>
-
-              <br />
-
-              <button type="submit">Enviar mensaje</button>
-            </form>
-          </div>
+      <section class="contacto py-5" id="contacto">
+        <div class="container">
+            <div class="headerContacto text-center mb-4">
+                <h2>Contáctanos</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <div class="tarjetaContacto h-100">
+                        <h3>Información de contacto</h3>
+                        <p>
+                            En este formulario podrás enviarnos todo tipo de petición,
+                            queja, reclamo o sugerencia diligenciando todos los campos
+                            del formato.
+                        </p>
+                        <p><strong>Correo:</strong> contacto@jakfatechnology.com</p>
+                        <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+                        <p><strong>Dirección:</strong> Carrera 7 # 50-22 Bogotá, Colombia</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="tarjetaContacto">
+                         <h3>Envíanos un mensaje</h3>
+                        <form id="formularioContacto">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input
+                                    type="text"
+                                    id="nombre"
+                                    name="nombre"
+                                    class="form-control"
+                                    required
+                                >
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo electrónico</label>
+                                <input
+                                    type="email"
+                                    id="correo"
+                                    name="correo"
+                                    class="form-control"
+                                    required
+                                >
+                            </div>
+                            <div class="mb-3">
+                                <label for="asunto" class="form-label">Asunto</label>
+                                <input
+                                    type="text"
+                                    id="asunto"
+                                    name="asunto"
+                                    class="form-control"
+                                    required
+                                >
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea
+                                    id="mensaje"
+                                    name="mensaje"
+                                    rows="6"
+                                    class="form-control"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Enviar mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
       </section>
-
-        </section>
-
     </div>
 
     <footer>
@@ -409,23 +247,14 @@
     </footer>
 
     <script src="app.js" defer></script>
-
     <script>
       const formulario = document.getElementById("formularioContacto");
 
       formulario.addEventListener("submit", function (event) {
-        event.preventDefault();
-        const formulario = document.getElementById("formularioContacto");
-
-        formulario.addEventListener("submit", function (event) {
-
-            event.preventDefault();
-
-            alert("Formulario enviado correctamente");
-
-            formulario.reset();
-
-        document.getElementById("nombre").focus();
+          event.preventDefault();
+          alert("Formulario enviado correctamente");
+          formulario.reset();
+          document.getElementById("nombre").focus();
       });
     </script>
     <script
@@ -434,13 +263,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-</html>
-            document.getElementById("nombre").focus();
-
-        });
-
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-
 </html>
