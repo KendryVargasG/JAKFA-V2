@@ -167,12 +167,6 @@ footer address {
     font-family: var(--fuente-parrafos);
 }
 
-.contenedorContacto {
-    width: 85%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 .headerContacto h2 {
     margin-bottom: 20px;
     color: var(--azulmain);
@@ -216,49 +210,6 @@ footer address {
     color: var(--azulmain);
     font-size: 0.9rem;
     font-weight: bold;
-}
-
-.contacto input,
-.contacto textarea {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 6px;
-    padding: 10px;
-    border: 1px solid var(--lowblue);
-    border-radius: 6px;
-    background-color: white;
-    color: var(--negro);
-    font-family: var(--fuente-parrafos);
-    font-size: 0.9rem;
-}
-
-.contacto textarea {
-    resize: vertical;
-}
-
-.contacto input:focus,
-.contacto textarea:focus {
-    outline: none;
-    border-color: var(--azulmain);
-    box-shadow: 0 0 0 3px rgba(51, 159, 231, 0.3);
-}
-
-.contacto button {
-    padding: 10px 24px;
-    border: none;
-    border-radius: 999px;
-    background-color: var(--azulmain);
-    color: var(--blanco);
-    font-family: var(--fuente-parrafos);
-    font-size: 0.95rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.contacto button:hover {
-    background-color: var(--lowblue);
-    transform: translateY(-2px);
 }
 
 @media (max-width: 650px) {
