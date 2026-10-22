@@ -99,76 +99,37 @@ footer address {
 }
 
 /* ===== Sección Contáctanos ===== */
-.contacto {
-    padding: 40px 20px;
-    color: var(--negro);
-    font-family: var(--fuente-parrafos);
+
+.tarjetaContacto {
+    background: rgba(255, 255, 255, 0.96);
+    border-left: 5px solid var(--lowblue);
+    border-radius: 15px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 8px 25px rgba(4, 66, 124, 0.15);
+    transition: all 0.3s ease;
 }
 
-.cardVentaja {
-    background-color: #ffffff;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+.tarjetaContacto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(4, 66, 124, 0.25);
 }
 
-.cardVentaja:hover {
-    background-color: var(--barraincio) !important;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(29, 25, 31, 0.25) !important;
+.tarjetaContacto h3 {
+    color: var(--azulmain);
+    font-family: var(--fuente-titulos);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--lowblue);
 }
 
 .tarjetaContacto p {
-    margin-bottom: 8px;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    margin-bottom: 12px;
+    line-height: 1.7;
 }
 
-.contacto label {
+.tarjetaContacto strong {
     color: var(--azulmain);
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-.contacto input,
-.contacto textarea {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 6px;
-    padding: 10px;
-    border: 1px solid var(--lowblue);
-    border-radius: 6px;
-    background-color: white;
-    color: var(--negro);
-    font-family: var(--fuente-parrafos);
-    font-size: 0.9rem;
-}
-
-.contacto textarea {
-    resize: vertical;
-}
-
-.contacto input:focus,
-.contacto textarea:focus {
-    outline: none;
-    border-color: var(--azulmain);
-    box-shadow: 0 0 0 3px rgba(51, 159, 231, 0.3);
-}
-
-.contacto button {
-    padding: 10px 24px;
-    border: none;
-    border-radius: 999px;
-    background-color: var(--azulmain);
-    color: var(--blanco);
-    font-family: var(--fuente-parrafos);
-    font-size: 0.95rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.contacto button:hover {
-    background-color: var(--lowblue);
-    transform: translateY(-2px);
 }
 
 @media (max-width: 650px) {
