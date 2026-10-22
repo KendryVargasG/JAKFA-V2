@@ -152,31 +152,45 @@ footer address {
 }
 
 /* ===== Sección Contáctanos ===== */
-.contacto {
-    padding: 40px 20px;
-    color: var(--negro);
-    font-family: var(--fuente-parrafos);
+
+.tarjetaContacto {
+    background: rgba(255, 255, 255, 0.96);
+    border-left: 5px solid var(--lowblue);
+    border-radius: 15px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 8px 25px rgba(4, 66, 124, 0.15);
+    transition: all 0.3s ease;
 }
 
-.contenedorContacto {
-    width: 85%;
-    max-width: 1000px;
-    margin: 0 auto;
+.tarjetaContacto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(4, 66, 124, 0.25);
 }
 
-.cardVentaja {
-    background-color: #ffffff;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+.tarjetaContacto h3 {
+    color: var(--azulmain);
+    font-family: var(--fuente-titulos);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--lowblue);
 }
 
-.cardVentaja:hover {
-    background-color: var(--barraincio) !important;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(29, 25, 31, 0.25) !important;
+.tarjetaContacto p {
+    margin-bottom: 12px;
+    line-height: 1.7;
 }
 
-.cardVentaja:hover h4,
-.cardVentaja:hover p,
-.cardVentaja:hover .iconoVentaja {
-    color: var(--blanco) !important;
+.tarjetaContacto strong {
+    color: var(--azulmain);
+}
+
+@media (max-width: 650px) {
+    .headerContacto h2 {
+        font-size: 1.8rem;
+    }
+
+    .contenedorContacto {
+        width: 100%;
+    }
 }
