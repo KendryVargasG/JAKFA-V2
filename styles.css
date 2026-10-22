@@ -29,6 +29,59 @@ body {
     background-attachment: fixed;
 }
 
+/* ===== Sección Inicio  ===== */
+.inicio {
+    --bs-border-color: var(--lowblue); /* color del borde izquierdo de la intro y las cards */
+    color: var(--negro);
+    font-family: var(--fuente-parrafos);
+}
+
+.headerInicio h1,
+.catalogo h2 {
+    color: var(--barraincio);
+    font-family: var(--fuente-titulos);
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+.inicio .card {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inicio .intro {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+ .inicio .intro:hover {
+    background-color: var(--barraincio) !important;
+ }
+
+.inicio .card:hover, .inicio .intro:hover {
+    --bs-card-bg: var(--barraincio) !important;
+    color: var(--blanco);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(29, 25, 31, 0.25) !important;
+}
+
+.inicio .card-title {
+    color: var(--barraincio);
+    font-family: var(--fuente-titulos);
+    transition: color 0.3s ease;
+}
+
+.inicio .card-text,
+.inicio .precio {
+    transition: color 0.3s ease;
+}
+
+.inicio .precio {
+    color: var(--azulmain);
+}
+
+.inicio .card:hover .card-title,
+.inicio .card:hover .card-text,
+.inicio .card:hover .precio {
+    color: var(--blanco);
+}
 /* ===== sección quienes somos ===== */
 .quienesSomos {
     font-family: var(--fuente-parrafos);
