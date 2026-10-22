@@ -1,17 +1,18 @@
 :root {
-    --azulmain: rgb(4, 66, 124);
-    --lowblue: rgb(51, 159, 231); 
-    --negro: rgba(8, 5, 14, 0.952);
-    --blanco: rgb(241, 245, 252);
-    --verde: rgb(3, 82, 85); 
-    --morado: rgb(73, 4, 105);
+    --azulmain: rgb(4, 66, 124);      /* Color principal para títulos y elementos destacados */
+    --barraincio: #1D191F;            /* Color oscuro para barras de navegación y fondos especiales */
+    --lowblue: rgb(51, 159, 231);     /* Azul claro para acentos, bordes y destaques visuales */
+    --negro: rgba(8, 5, 14, 0.952);   /* Color base oscuro para textos y contrastes altos */
+    --blanco: rgb(241, 245, 252);     /* Tono claro/blanco para fondos secundarios y textos sobre oscuro */
+    --verde: rgb(3, 82, 85);          /* Color secundario/alternativo de acento */
+    --morado: rgb(73, 4, 105);        /* Tono morado corporativo para subtítulos e iconos */
     --fuente-titulos: 'Copperplate', fantasy;
     --fuente-parrafos: 'Verdana', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 70px; /* evita que el menú tape el título de cada sección */
+    scroll-padding-top: 70px;
 }
 
 * {
@@ -28,400 +29,67 @@ body {
     background-attachment: fixed;
 }
 
-/* ===== Inicio ===== */
-.inicio {
-    color: var(--negro);
-    padding: 40px 20px;
-    font-family: var(--fuente-parrafos);
-}
-
-.contenedorInicio {
-    width: 85%;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.headerInicio h1 {
-    margin: 10px 0;
-    color: var(--azulmain);
-    font-family: var(--fuente-titulos);
-    font-size: 2.3rem;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
-}
-
-.inicio .estado {
-    display: inline-block;
-    margin: 0 0 10px;
-    padding: 6px 14px;
-    border-radius: 999px;
-    border: 1px solid var(--lowblue);
-    background-color: var(--blanco);
-    color: var(--azulmain);
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-.inicio .intro {
-    max-width: 850px;
-    margin: 0 auto 30px;
-    padding: 25px;
-    border-left: 5px solid var(--lowblue);
-    border-radius: 6px;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: left;
-}
-
-.catalogo h2 {
-    margin-bottom: 20px;
-    color: var(--azulmain);
-    font-family: var(--fuente-titulos);
-    font-size: 1.7rem;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
-}
-
-.articulos {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 15px;
-    padding: 0;
-    list-style: none;
-    text-align: left;
-}
-
-.inicio .producto {
-    padding: 20px;
-    border-left: 5px solid var(--lowblue);
-    border-radius: 6px;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.inicio .producto:hover {
-    background-color: var(--blanco);
-    transform: translateY(-4px);
-    box-shadow: 0 6px 15px rgba(4, 66, 124, 0.15);
-}
-
-.inicio .producto h3 {
-    margin-bottom: 10px;
-    color: var(--azulmain);
-    font-family: var(--fuente-titulos);
-    font-size: 1.1rem;
-}
-
-.inicio .producto p {
-    margin-bottom: 10px;
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-.inicio .precio {
-    color: var(--azulmain);
-    font-weight: bold;
-}
-
-.inicio .abierto {
-    border-color: rgb(3, 82, 85);
-    background-color: rgb(181, 238, 181);
-    color: rgb(4, 85, 4);
-}
-
-.inicio .cerrado {
-    border-color: rgb(78, 5, 5);
-    background-color: rgb(235, 198, 198);
-    color: rgb(78, 5, 5);
-}
-
-@media (max-width: 650px) {
-    .contenedorInicio {
-        width: 100%;
-    }
-
-    .headerInicio h1 {
-        font-size: 1.8rem;
-    }
-
-    .inicio .intro {
-        padding: 20px;
-    }
-
-    .catalogo h2 {
-        font-size: 1.4rem;
-    }
-
-    .articulos {
-        grid-template-columns: 1fr;
-    }
-
-    .imginfSomos {
-        flex-direction: column;
-    }
-}
-
-/* seccion quienes somos*/
+/* ===== sección quienes somos ===== */
 .quienesSomos {
-    color: var(--negro);
-    padding: 40px 20px;
     font-family: var(--fuente-parrafos);
 }
 
-.contenedorSomos {
-    width: 85%;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.headerSomos h2 {
+.quienesSomos h2,
+.quienesSomos h3,
+.quienesSomos h4 {
     font-family: var(--fuente-titulos);
     color: var(--azulmain);
-    font-size: 2.3rem;
-    margin-bottom: 10px;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+    transition: color 0.3s ease;
 }
 
-.infSomos {
-    color: var(--morado);
-    font-weight: bold;
-    font-size: 1.05rem;
-    margin-bottom: 30px;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+.introBox {
+    background-color: #ffffff;
+    border-left: 5px solid var(--lowblue) !important;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.imginfSomos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    margin-bottom: 35px;
-    text-align: left;
+.introBox:hover {
+    background-color: var(--barraincio);
+    color: var(--blanco) !important;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(29, 25, 31, 0.25) !important;
 }
 
-.introSomos {
-    flex: 1;
-    background-color: white;
-    padding: 25px;
-    border-left: 5px solid var(--lowblue);
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+.introBox:hover h3,
+.introBox:hover p,
+.introBox:hover strong {
+    color: var(--blanco) !important;
 }
 
-.introSomos h3 {
-    font-family: var(--fuente-titulos);
-    color: var(--azulmain);
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-.introSomos p {
+.introBox p {
     font-size: 0.95rem;
     line-height: 1.6;
-}
-
-.imagenSomos {
-    flex: 1;
-    text-align: center;
+    transition: color 0.3s ease;
 }
 
 .imagenSomos img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid var(--azulmain);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 320px;
+    object-fit: cover;
 }
 
-.ventajasSomos {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.tarjetaSomos {
-    background-color: white;
-    padding: 20px;
-    border-left: 5px solid var(--lowblue);
-    border-radius: 6px;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tarjetaSomos:hover {
-    background-color: var(--blanco);
-    transform: translateY(-4px);
-    box-shadow: 0 6px 15px rgba(4, 66, 124, 0.15);
-}
-
-.tarjetaSomos h4 {
-    font-family: var(--fuente-titulos);
-    color: var(--azulmain);
-    margin-bottom: 6px;
-    font-size: 1.1rem;
-}
-
-.tarjetaSomos p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
-
- 
-/* ===== Barra de navegación (index y contactenos) ===== */
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px 25px;
-    padding: 14px 20px;
-    background-color: var(--azulmain);
-    font-family: var(--fuente-parrafos);
-    font-size: 0; /* oculta los separadores "|" del HTML */
-}
- 
-nav a {
-    color: var(--blanco);
-    font-size: 0.95rem;
-    font-weight: bold;
-    text-decoration: none;
+.iconoVentaja {
+    color: var(--morado);
     transition: color 0.3s ease;
 }
- 
-nav a:hover {
-    color: var(--lowblue);
-}
- 
-/* ===== Pie de página (index y contactenos) ===== */
-footer {
-    padding: 25px 20px;
-    background-color: var(--azulmain);
-    color: var(--blanco);
-    font-family: var(--fuente-parrafos);
-    font-size: 0.9rem;
-    line-height: 1.6;
-    text-align: center;
-}
- 
-footer address {
-    font-style: normal;
-    margin-bottom: 6px;
-}
 
-/* ===== Sección Contáctanos ===== */
-.contacto {
-    padding: 40px 20px;
-    color: var(--negro);
-    font-family: var(--fuente-parrafos);
-}
-
-.contenedorContacto {
-    width: 85%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.headerContacto h2 {
-    margin-bottom: 20px;
-    color: var(--azulmain);
-    font-family: var(--fuente-titulos);
-    font-size: 2.3rem;
-    text-align: center;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
-}
-
-.tarjetaContacto {
-    margin-bottom: 25px;
-    padding: 25px;
-    border-left: 5px solid var(--lowblue);
-    border-radius: 6px;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    text-align: left;
+.cardVentaja {
+    background-color: #ffffff;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tarjetaContacto:hover {
-    background-color: var(--blanco);
+.cardVentaja:hover {
+    background-color: var(--barraincio) !important;
     transform: translateY(-4px);
-    box-shadow: 0 6px 15px rgba(4, 66, 124, 0.15);
+    box-shadow: 0 8px 20px rgba(29, 25, 31, 0.25) !important;
 }
 
-.tarjetaContacto h3 {
-    margin-bottom: 12px;
-    color: var(--azulmain);
-    font-family: var(--fuente-titulos);
-    font-size: 1.4rem;
-}
-
-.tarjetaContacto p {
-    margin-bottom: 8px;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-.contacto label {
-    color: var(--azulmain);
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-.contacto input,
-.contacto textarea {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 6px;
-    padding: 10px;
-    border: 1px solid var(--lowblue);
-    border-radius: 6px;
-    background-color: white;
-    color: var(--negro);
-    font-family: var(--fuente-parrafos);
-    font-size: 0.9rem;
-}
-
-.contacto textarea {
-    resize: vertical;
-}
-
-.contacto input:focus,
-.contacto textarea:focus {
-    outline: none;
-    border-color: var(--azulmain);
-    box-shadow: 0 0 0 3px rgba(51, 159, 231, 0.3);
-}
-
-.contacto button {
-    padding: 10px 24px;
-    border: none;
-    border-radius: 999px;
-    background-color: var(--azulmain);
-    color: var(--blanco);
-    font-family: var(--fuente-parrafos);
-    font-size: 0.95rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.contacto button:hover {
-    background-color: var(--lowblue);
-    transform: translateY(-2px);
-}
-
-@media (max-width: 650px) {
-    .headerContacto h2 {
-        font-size: 1.8rem;
-    }
-
-    .contenedorContacto {
-        width: 100%;
-    }
+.cardVentaja:hover h4,
+.cardVentaja:hover p,
+.cardVentaja:hover .iconoVentaja {
+    color: var(--blanco) !important;
 }
